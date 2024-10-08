@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ScrollView } from 'react-native';
 
 // import DlyShow from './src/component/DlyShow';
 // import ScaleCircle from './src/component/ScaleCircle';
@@ -28,6 +28,8 @@ import PProgressXBox from './src/practice/PProgressXBox';
 import PracScale from './src/practice/PracScale';
 import PracHorizonXBox from './src/practice/PracHorizonXBox';
 import Cart from './src/page/Cart';
+import Tab from './src/page/Tab';
+import Email from './src/page/Email';
 
 
 
@@ -58,7 +60,9 @@ const App = () => {
       {/* <PracScale/> */}
       {/* <PracHorizonXBox /> */}
 
-      <Cart />
+      {/* <Cart /> */}
+      {/* <Tab/> */}
+      <Email />
 
     </View>
   );
@@ -67,9 +71,10 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
-  app:{
-    flex: 1, 
-    // justifyContent: 'center', alignItems: 'center', 
+  app: {
+    flex: 1,
+    // justifyContent: 'center', 
+    // alignItems: 'center', 
     backgroundColor: '#232736'
   }
 })
